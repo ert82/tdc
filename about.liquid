@@ -5,12 +5,15 @@ layout: layout.liquid
 eleventyComputed:
   title: "{{ sitecontent.aboutPage.fields.title }}"
 ---
-  
+
 Global: {{globals.test}} 
 
 <h1>
   title: {{ sitecontent.aboutPage.page.fields.title }}
 </h1>
+<h2>
+  About fixed text
+</h2>
 <div>
   image <img src="{{sitecontent.aboutPage.image}}" />
 </div>
