@@ -1,0 +1,18 @@
+---
+data: sitecontent.aboutPage
+permalink: "about.html"
+layout: layout.liquid
+eleventyComputed:
+  title: "{{ sitecontent.aboutPage.fields.title }}"
+---
+Global: {{globals.test}} 
+
+<h1>
+  title: {{ sitecontent.aboutPage.page.fields.title }}
+</h1>
+<div>
+  image <img src="{{sitecontent.aboutPage.image}}" />
+</div>
+<div>
+  content: {{ sitecontent.aboutPage.content }}
+</div>

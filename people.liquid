@@ -1,0 +1,19 @@
+---
+permalink: "people.html"
+---
+<div>
+  <h1>People</h1>
+  <div>
+    {% for person in sitecontent.people %}
+      <div>
+        <h2>{{ person.name }}</h2>
+        <div>
+          <img src="{{ person.mainImage }}" />
+        </div>
+        <div>
+          {{ person.bio }}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
