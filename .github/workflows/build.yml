@@ -26,6 +26,6 @@ jobs:
 
       - name: Run npm build
         env:
-          CTFL_SPACE: ${{ secrets.CTFL_SPACE }}
-          CTFL_ACCESSTOKEN: ${{ secrets.CTFL_ACCESSTOKEN }}
+          CTFL_SPACE: '1234'
+          CTFL_ACCESSTOKEN: '5678'
         run: npm run build
