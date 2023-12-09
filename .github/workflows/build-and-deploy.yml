@@ -15,7 +15,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Test
+      - name: Test0
+        run: echo testfrom0       
+
+      - name: Test1
         run: echo ${{ secrets.CTFL_SPACE }}       
 
       - name: Use Node.js ${{ matrix.node-version }}
