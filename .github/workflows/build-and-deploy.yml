@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Test
-        run: echo ${{ env.GITHUB_SHA_SHORT }}       
+        run: echo ${{ secrets.CTFL_SPACE }}       
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
