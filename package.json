@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "eleventy",
-    "serve": "eleventy --serve",
-    "build:eleventy:prod": "ELEVENTY_ENV=production eleventy"
+    "serve": "eleventy --serve"
   },
   "author": "",
   "license": "ISC",
