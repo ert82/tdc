@@ -19,7 +19,7 @@ jobs:
         run: echo testfrom0       
 
       - name: Test1
-        run: echo ${{ secrets.CTFL_SPACE }}       
+        run: echo ${{ secrets.CTFL_SPACE }} ${{ secrets.CTFL_ACCESSTOKEN }}
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
