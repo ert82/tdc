@@ -26,6 +26,8 @@ jobs:
 
       - name: Run npm build
         run: npm run build
+          CTFL_SPACE: ${{ secrets.CTFL_SPACE }}
+          CTFL_ACCESSTOKEN: ${{ secrets.CTFL_ACCESSTOKEN }}        
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
